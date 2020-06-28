@@ -2,13 +2,14 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-cashfree"
-    version="1.0.0">
+    version="1.0.1">
     <name>Cordova Cashfree Plugin</name>
     <description>Cashfree's cordova plugin for payments</description>
     <license>MIT</license>
     <keywords></keywords>
     <repo>https://github.com/rajnandan1/cashfree-payments-cordova-test.git</repo>
     <issue>https://github.com/rajnandan1/cashfree-payments-cordova-test/issues</issue>
+    <dependency id="cordova-plugin-inappbrowser" version=">=1.0.0" >
 
     <!-- android -->
     <platform name="android">
