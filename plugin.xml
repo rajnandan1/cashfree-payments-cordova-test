@@ -9,7 +9,7 @@
     <keywords></keywords>
     <repo>https://github.com/rajnandan1/cashfree-payments-cordova-test.git</repo>
     <issue>https://github.com/rajnandan1/cashfree-payments-cordova-test/issues</issue>
-    <dependency id="cordova-plugin-inappbrowser" version=">=1.0.0" >
+    
 
     <!-- android -->
     <platform name="android">
