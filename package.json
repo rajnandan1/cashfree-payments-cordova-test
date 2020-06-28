@@ -1,12 +1,52 @@
 {
-  "name": "cordova-plugin-template",
+  "name": "cordova-cashfree",
   "version": "1.0.0",
+  "description": "Cordova cashfree Plugin",
+  "types": "./types/index.d.ts",
   "cordova": {
-    "id": "cordova-plugin-template",
+    "id": "cordova-cashfree",
     "platforms": [
       "android",
-      "ios"
+      "ios",
     ]
   },
-  "description": "A starting point for a Cordova Plugin"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajnandan1/cashfree-payments-cordova-test"
+  },
+  "bugs": {
+    "url": "https://github.com/rajnandan1/cashfree-payments-cordova-test/issues"
+  },
+  "keywords": [
+    "cordova",
+    "in",
+    "app",
+    "browser",
+    "cashfree",
+    "ecosystem:cordova",
+    "cordova-cashfree-android",
+    "cordova-cashfree-ios",
+    "cordova-cashfree"
+  ],
+  "scripts": {
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova": ">=3.1.0",
+        "cordova-plugin-inappbrowser": ">=1.0.0"
+      }
+    }
+  },
+  "author": "Raj Nandan Sharma",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
 }
