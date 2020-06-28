@@ -5,7 +5,7 @@
     "id": "cashfree-payments-cordova-test",
     "platforms": [
       "android",
-      "ios",
+      "ios"
     ]
   },
   "description": "A starting point for a Cordova Plugin"
