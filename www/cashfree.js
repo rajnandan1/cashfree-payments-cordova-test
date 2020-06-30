@@ -54,10 +54,18 @@ var Cashfree = {
                 "_self",
                 browserObjectOptions.join()
             );
-            browserRef.addEventListener("message", function(event) {
+
+            browserRef.addEventListener('loadstart', function () {
                 browserRef.close();
-                return resolve(event.data)
+                if(event.url.indexOf("cordova-sdk://") > -1){
+                    resolve(event.url);
+                }
+                
             });
+            // browserRef.addEventListener("message", function(event) {
+            //     browserRef.close();
+            //     return resolve(event.data)
+            // });
 
         });
 
