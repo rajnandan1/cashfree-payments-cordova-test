@@ -55,7 +55,7 @@ var Cashfree = {
                 browserObjectOptions.join()
             );
 
-            browserRef.addEventListener('loadstart', function () {
+            browserRef.addEventListener('loadstart', function (event) {
                
                 if(event.url.indexOf("cordova-sdk://") > -1){
                     browserRef.close();
