@@ -46,19 +46,27 @@ var Cashfree = {
                 "hidespinner=no",
                 "toolbarposition=top",
                 "enableViewportScale=no",
-                "enableViewportScale=yes"
+                "enableViewportScale=yes" 
             ];
 
             var browserRef = cordova.InAppBrowser.open(
                 pageContentUrl,
-                "_self",
+                "_blank",
                 browserObjectOptions.join()
             );
 
             browserRef.addEventListener('loadstart', function () {
-                browserRef.close();
+               
                 if(event.url.indexOf("cordova-sdk://") > -1){
-                    resolve(event.url);
+                    browserRef.close();
+                    var str = event.url;
+                    str = str.split("cordova-sdk://TransactionResponse#");
+                    str = str[1]
+                    str = unescape(str);
+                     
+                    str = JSON.parse(str);
+                     
+                    resolve(str);
                 }
                 
             });
