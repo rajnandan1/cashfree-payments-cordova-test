@@ -46,7 +46,7 @@ var Cashfree = {
                 "hidespinner=no",
                 "toolbarposition=top",
                 "enableViewportScale=no",
-                "enableViewportScale=yes"
+                "enableViewportScale=yes" 
             ];
 
             var browserRef = cordova.InAppBrowser.open(
